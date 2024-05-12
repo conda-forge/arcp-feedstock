@@ -1,5 +1,5 @@
 {% set name = "arcp" %}
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,13 +7,12 @@ package:
 
 source:
   url: https://github.com/stain/arcp-py/archive/{{ version }}.tar.gz
-  sha256: a03c1ec28781c6a50704bd776439d38f5393c45d71385583be584346b646d688
+  sha256: 8a0058361c24f8e4ec7280f493d5b0a9fee3330ce8c38d439e6ef6c25a769e6f
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
- 
+  script: {{ PYTHON }} -m pip install . -vv
 requirements:
   host:
     - python
@@ -37,7 +36,7 @@ about:
   home: https://github.com/stain/arcp-py
   license: Apache-2.0
   license_file: LICENSE.txt
-  summary: 'Create/parse arcp (Archive and Package) URIs.'
+  summary: Create/parse arcp (Archive and Package) URIs.
   description: |
     arcp provides functions for creating arcp URIs, which can be 
     used for identifying or parsing hypermedia files packaged in an archive 
