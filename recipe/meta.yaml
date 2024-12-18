@@ -1,5 +1,6 @@
 {% set name = "arcp" %}
 {% set version = "0.2.1" %}
+{% set python_min = "3.6" %}
 
 package:
   name: {{ name|lower }}
@@ -15,12 +16,15 @@ build:
   script: {{ PYTHON }} -m pip install . -vv
 requirements:
   host:
-    - python
+    - python {{ python_min }}
     - pip
+    - setuptools
   run:
-    - python
+    - python >={{ python_min }}
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - arcp
     - arcp.generate
