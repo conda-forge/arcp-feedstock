@@ -1,5 +1,6 @@
 {% set name = "arcp" %}
 {% set version = "0.2.1" %}
+{% set python_min = "3.6" %}
 
 package:
   name: {{ name|lower }}
@@ -17,8 +18,8 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - setuptools
     - pip
+    - setuptools
   run:
     - python >={{ python_min }}
 
@@ -42,8 +43,8 @@ about:
   license_file: LICENSE.txt
   summary: Create/parse arcp (Archive and Package) URIs.
   description: |
-    arcp provides functions for creating arcp URIs, which can be 
-    used for identifying or parsing hypermedia files packaged in an archive 
+    arcp provides functions for creating arcp URIs, which can be
+    used for identifying or parsing hypermedia files packaged in an archive
     or package, like a ZIP file.
 
 extra:
