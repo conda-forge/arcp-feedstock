@@ -43,8 +43,8 @@ about:
   license_file: LICENSE.txt
   summary: Create/parse arcp (Archive and Package) URIs.
   description: |
-    arcp provides functions for creating arcp URIs, which can be 
-    used for identifying or parsing hypermedia files packaged in an archive 
+    arcp provides functions for creating arcp URIs, which can be used
+    for identifying or parsing hypermedia files packaged in an archive
     or package, like a ZIP file.
 
 extra:
