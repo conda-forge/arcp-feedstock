@@ -148,5 +148,8 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@ewels](https://github.com/ewels/)
+* [@mirpedrol](https://github.com/mirpedrol/)
 * [@pvanheus](https://github.com/pvanheus/)
+* [@stain](https://github.com/stain/)
 
